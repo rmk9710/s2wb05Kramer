@@ -3,18 +3,19 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var pug = require('pug');
 
-import index.pug from "views";
+import energy.pug;
   
-const index = () => {
+const energy.pug = () => {
   return (
     <div>
-      <h1>index page</h1>
+      <h1>pug page</h1>
     </div>
   );
 };
   
-export default index.pug;
+export default energy.pug;
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
